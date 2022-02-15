@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#B4D0A4",
+  "usingComponents": {
+    "u-line": "/uview-ui/components/u-line/u-line"
+  }
+}
