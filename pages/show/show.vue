@@ -3,7 +3,7 @@
 		<!--顶部背景-->
 		<view class="top">
 			<view class="portrait">
-				<image src="../../static/moonbridge/lemon.png"></image>`
+				<image src="../../static/moonbridge/lemon.png"></image>
 			</view>
 			<text class="headline">一颗青柠 藏有青涩的记忆</text>
 		</view>
