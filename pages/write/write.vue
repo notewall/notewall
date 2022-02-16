@@ -31,6 +31,12 @@
 			<!--输入框未输入时，按钮无法点击，颜色为浅色，输入时，则为亮色，同时点击后，是否提示查找成功或者查找失败或者查找中-->
 			<button @click="warn()">发布留言</button>
 		</view>
+		<!--创建留言-->
+		<view class="write-btn-out" style="cursor: pointer">
+			<view class="write-btn-in" @click="write()">
+				<text>返回</text>
+			</view>
+		</view>
 	</view>
 </template>
 
@@ -89,6 +95,11 @@
 						icon:"none"
 					})
 				}
+			},
+			write(){
+				uni.navigateTo({
+					url:'../show/show'
+				})
 			},
 		},
 		onLoad(options){
@@ -250,5 +261,32 @@
 	}
 	.s-btn-stop button{
 		background-color:$setcolor_3;
+	}
+	.write-btn-out{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		bottom: $setposbottom;
+		right: $setposright;
+		width: $sethw_2;
+		height: $sethw_2;
+		background-color:$setcolor_4;
+		box-shadow: $write_btn_out_box_shadow;
+		border-radius: 50%;
+	}
+	.write-btn-in{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: $sethw_3;
+		height: $sethw_3;
+		color:$setcolor_7;
+		font-size: $setfontsize_1;
+		background-color: $setcolor_4;
+		box-shadow: $write_btn_out_box_shadow;
+		border: $write_btn_in_border;
+		border-radius: 50%;
 	}
 </style>
