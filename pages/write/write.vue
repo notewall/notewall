@@ -32,8 +32,8 @@
 			<button @click="warn()">发布留言</button>
 		</view>
 		<!--创建留言-->
-		<view class="write-btn-out" style="cursor: pointer">
-			<view class="write-btn-in" @click="write()">
+		<view class="show-btn-out" style="cursor: pointer">
+			<view class="show-btn-in" @click="show()">
 				<text>返回</text>
 			</view>
 		</view>
@@ -96,7 +96,7 @@
 					})
 				}
 			},
-			write(){
+			show(){
 				uni.navigateTo({
 					url:'../show/show'
 				})
@@ -154,9 +154,9 @@
 	$setborder_2:solid 2upx #BBBBBB;
 	$setbordertop_1:solid 2upx #B4D0A4;
 	$setborderbottom_1:solid 2upx #B4D0A4;
-	$write_btn_out_box_shadow:0 4upx 12upx 0 rgba(84,164,153,.4);//rgba(0,0,0,.4)
+	$show_btn_out_box_shadow:0 4upx 12upx 0 rgba(84,164,153,.4);//rgba(0,0,0,.4)
 	$portrait_box_shadow:0 4upx 12upx 0 #8EC19F;
-	$write_btn_in_border:solid 2upx #FDFCFC;
+	$show_btn_in_border:solid 2upx #FDFCFC;
 	
 	$setboradius_1:16rpx;
 	
@@ -262,7 +262,7 @@
 	.s-btn-stop button{
 		background-color:$setcolor_3;
 	}
-	.write-btn-out{
+	.show-btn-out{
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -272,10 +272,10 @@
 		width: $sethw_2;
 		height: $sethw_2;
 		background-color:$setcolor_4;
-		box-shadow: $write_btn_out_box_shadow;
+		box-shadow: $show_btn_out_box_shadow;
 		border-radius: 50%;
 	}
-	.write-btn-in{
+	.show-btn-in{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -285,8 +285,8 @@
 		color:$setcolor_7;
 		font-size: $setfontsize_1;
 		background-color: $setcolor_4;
-		box-shadow: $write_btn_out_box_shadow;
-		border: $write_btn_in_border;
+		box-shadow: $show_btn_out_box_shadow;
+		border: $show_btn_in_border;
 		border-radius: 50%;
 	}
 </style>
